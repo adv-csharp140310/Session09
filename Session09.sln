@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session09", "Session09\Sess
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoapServer", "SoapServer\SoapServer.csproj", "{2CE4CD27-D641-4397-B34E-002051C605EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoapClient", "SoapClient\SoapClient.csproj", "{84B71D3C-90E6-4435-9F81-B21DA288FA29}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2CE4CD27-D641-4397-B34E-002051C605EA} = {2CE4CD27-D641-4397-B34E-002051C605EA}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +26,10 @@ Global
 		{2CE4CD27-D641-4397-B34E-002051C605EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CE4CD27-D641-4397-B34E-002051C605EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CE4CD27-D641-4397-B34E-002051C605EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84B71D3C-90E6-4435-9F81-B21DA288FA29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84B71D3C-90E6-4435-9F81-B21DA288FA29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84B71D3C-90E6-4435-9F81-B21DA288FA29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84B71D3C-90E6-4435-9F81-B21DA288FA29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
