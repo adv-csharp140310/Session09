@@ -34,6 +34,8 @@
             progressBarEmails = new ProgressBar();
             buttonRaceConditon = new Button();
             listBoxMsg = new ListBox();
+            buttonAsyncAwait = new Button();
+            button1 = new Button();
             SuspendLayout();
             // 
             // buttonSendEmail
@@ -91,11 +93,33 @@
             listBoxMsg.Size = new Size(609, 184);
             listBoxMsg.TabIndex = 5;
             // 
+            // buttonAsyncAwait
+            // 
+            buttonAsyncAwait.Location = new Point(12, 291);
+            buttonAsyncAwait.Name = "buttonAsyncAwait";
+            buttonAsyncAwait.Size = new Size(161, 50);
+            buttonAsyncAwait.TabIndex = 6;
+            buttonAsyncAwait.Text = "Async Await";
+            buttonAsyncAwait.UseVisualStyleBackColor = true;
+            buttonAsyncAwait.Click += buttonAsyncAwait_Click;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(12, 347);
+            button1.Name = "button1";
+            button1.Size = new Size(161, 53);
+            button1.TabIndex = 7;
+            button1.Text = "Read File";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
+            Controls.Add(buttonAsyncAwait);
             Controls.Add(listBoxMsg);
             Controls.Add(buttonRaceConditon);
             Controls.Add(progressBarEmails);
@@ -115,5 +139,7 @@
         private ProgressBar progressBarEmails;
         private Button buttonRaceConditon;
         private ListBox listBoxMsg;
+        private Button buttonAsyncAwait;
+        private Button button1;
     }
 }

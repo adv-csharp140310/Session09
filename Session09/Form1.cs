@@ -65,5 +65,38 @@
                 balance = newBalance;
             }
         }
+
+        // void -> Task
+        // int -> Tasl<int>
+        private Task updateBalanceAsync(int amount, int delay)
+        {
+            var task = new Task(() =>
+            {
+                var newBalance = balance + amount;
+                Thread.Sleep(delay);
+                listBoxMsg.Invoke(() => listBoxMsg.Items.Add($"Balance {balance} -> {newBalance}"));
+                balance = newBalance;
+            });
+            task.Start();
+            return task;
+        }
+
+        private async void buttonAsyncAwait_Click(object sender, EventArgs e)
+        {
+            listBoxMsg.Items.Clear();
+            balance = 100;
+            var rnd = new Random();
+            await updateBalanceAsync(10, rnd.Next(1000));
+            await updateBalanceAsync(-50, rnd.Next(1000));
+            await updateBalanceAsync(20, rnd.Next(1000));
+        }
+
+        private async void button1_Click(object sender, EventArgs e)
+        {
+            var reader = new StreamReader("expense-tracker.mp4");
+            //var data = reader.ReadToEnd();
+            var data = await reader.ReadToEndAsync();
+            MessageBox.Show("Done");
+        }
     }
 }
