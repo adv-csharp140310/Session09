@@ -38,5 +38,32 @@
             var t = new Thread(() => sendEmail());
             t.Start();
         }
+
+        int balance = 100;
+        private void buttonRaceConditon_Click(object sender, EventArgs e)
+        {
+            listBoxMsg.Items.Clear();
+            balance = 100;
+            var rnd = new Random();
+            var t1 = new Thread(() => updateBalance(10, rnd.Next(1000)));
+            var t2 = new Thread(() => updateBalance(-50, rnd.Next(1000)));
+            var t3 = new Thread(() => updateBalance(20, rnd.Next(1000)));
+            t1.Start();
+            t2.Start();
+            t3.Start();
+        }
+
+
+        private void updateBalance(int amount, int delay)
+        {
+            //Critical Region
+            lock (this)
+            {
+                var newBalance = balance + amount; //110
+                Thread.Sleep(delay);
+                listBoxMsg.Invoke(() => listBoxMsg.Items.Add($"Balance {balance} -> {newBalance}"));
+                balance = newBalance;
+            }
+        }
     }
 }

@@ -32,6 +32,8 @@
             buttonTestMsg = new Button();
             buttonSendEmailMultiThread = new Button();
             progressBarEmails = new ProgressBar();
+            buttonRaceConditon = new Button();
+            listBoxMsg = new ListBox();
             SuspendLayout();
             // 
             // buttonSendEmail
@@ -71,11 +73,31 @@
             progressBarEmails.Size = new Size(161, 23);
             progressBarEmails.TabIndex = 3;
             // 
+            // buttonRaceConditon
+            // 
+            buttonRaceConditon.Location = new Point(12, 235);
+            buttonRaceConditon.Name = "buttonRaceConditon";
+            buttonRaceConditon.Size = new Size(161, 50);
+            buttonRaceConditon.TabIndex = 4;
+            buttonRaceConditon.Text = "Race Condition";
+            buttonRaceConditon.UseVisualStyleBackColor = true;
+            buttonRaceConditon.Click += buttonRaceConditon_Click;
+            // 
+            // listBoxMsg
+            // 
+            listBoxMsg.FormattingEnabled = true;
+            listBoxMsg.Location = new Point(179, 235);
+            listBoxMsg.Name = "listBoxMsg";
+            listBoxMsg.Size = new Size(609, 184);
+            listBoxMsg.TabIndex = 5;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(listBoxMsg);
+            Controls.Add(buttonRaceConditon);
             Controls.Add(progressBarEmails);
             Controls.Add(buttonSendEmailMultiThread);
             Controls.Add(buttonTestMsg);
@@ -91,5 +113,7 @@
         private Button buttonTestMsg;
         private Button buttonSendEmailMultiThread;
         private ProgressBar progressBarEmails;
+        private Button buttonRaceConditon;
+        private ListBox listBoxMsg;
     }
 }
