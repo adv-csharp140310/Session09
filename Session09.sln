@@ -5,6 +5,8 @@ VisualStudioVersion = 17.12.35707.178 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session09", "Session09\Session09.csproj", "{C06BA864-61BD-4C5C-A872-1C6AA3FAC94D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoapServer", "SoapServer\SoapServer.csproj", "{2CE4CD27-D641-4397-B34E-002051C605EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C06BA864-61BD-4C5C-A872-1C6AA3FAC94D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C06BA864-61BD-4C5C-A872-1C6AA3FAC94D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C06BA864-61BD-4C5C-A872-1C6AA3FAC94D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CE4CD27-D641-4397-B34E-002051C605EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CE4CD27-D641-4397-B34E-002051C605EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CE4CD27-D641-4397-B34E-002051C605EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CE4CD27-D641-4397-B34E-002051C605EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
