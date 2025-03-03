@@ -1,0 +1,14 @@
+﻿Software Methodology
+	1. Waterfall - آبشاری
+	2. Rational Unified Process - RUP
+		1. Inception - آغازین
+		2. Elaboration - توسهه - طراحی دقیق
+		3. Connstruction - ساخت
+		4. Transition - استقرار  و 
+
+	3. Agile Software Development 
+		1. Scrum
+		2. Kanban
+		3. XP
+
+			
